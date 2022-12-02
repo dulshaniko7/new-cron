@@ -1,9 +1,10 @@
+import '@babel/polyfill'
+import 'mutationobserver-shim'
 import Vue from 'vue'
+import './plugins/bootstrap-vue'
 import App from './App.vue'
-import 'bootstrap/dist/css/bootstrap.min.css'
-import 'bootstrap/dist/js/bootstrap.min'
-import '@popperjs/core/lib/popper'
-import 'jquery/dist/jquery.min'
+
+
 
 Vue.config.productionTip = false
 
