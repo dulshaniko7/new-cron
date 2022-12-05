@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <div class="container">
-      <!--<Cron/> -->
+      <Cron/>
 
       <cron2/>
     </div>
@@ -10,12 +10,12 @@
 
 <script>
 
-//import Cron from "./components/Cron"
+import Cron from "./components/Cron"
 import cron2 from "@/components/cron2";
 
 export default {
   name: 'App',
-  components: {cron2}
+  components: {cron2,Cron}
 }
 </script>
 

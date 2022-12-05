@@ -36,7 +36,7 @@
     </div>
     <div>
 
-
+      <CronLight v-model="value" @error="error=$event"></CronLight>
       <div class="mt-2 grey--text text--darken-1">cron expression: {{ value }}</div>
     </div>
   </div>
