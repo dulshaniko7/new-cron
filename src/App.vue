@@ -1,8 +1,9 @@
 <template>
   <div id="app">
     <div class="container">
+      <h1>Vue 2 with year</h1>
       <Cron/>
-
+<h1>Vue 2 without year</h1>
       <cron2/>
     </div>
   </div>
