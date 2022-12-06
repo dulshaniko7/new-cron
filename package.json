@@ -9,7 +9,6 @@
   },
   "dependencies": {
     "@babel/polyfill": "^7.11.5",
-    "@vue-js-cron/light": "^1.0.4",
     "bootstrap": "^4.5.2",
     "bootstrap-vue": "^2.17.3",
     "core-js": "^3.6.5",
