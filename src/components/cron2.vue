@@ -1,10 +1,16 @@
 <template>
 
-<div class="tab-border">
-  <div class="mb-3 "><h3 class="font-weight-bolder">Cron Expression Generator</h3></div>
-  <VueCronEditorBuefy v-model="cronExpression"/>
-  cron Expression    :       {{cronExpression}}
-</div>
+  <div class="tab-border">
+    <div class="mb-3 "><h3 class="font-weight-bolder">Cron Expression Generator</h3></div>
+    <VueCronEditorBuefy
+        v-model="cronExpression"
+        :visibleTabs="['minutes','hourly','daily','weekly','monthly']"
+    ></VueCronEditorBuefy>
+    cron Expression : {{ cronExpression }}
+
+    <h2> cron Expression : seperate from component</h2>
+    <h3>{{ cronExpression }}</h3>
+  </div>
 
 </template>
 
@@ -17,7 +23,7 @@ export default {
     VueCronEditorBuefy
   },
   data() {
-    return{
+    return {
       cronExpression: "* */1 * * * *"
     }
   },
@@ -61,7 +67,8 @@ export default {
   padding: 5%;
   border: black solid 1px;
 }
-h3{
+
+h3 {
   text-decoration-line: underline;
 }
 </style>
